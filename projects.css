@@ -15,29 +15,32 @@
 }
 
 .project-card {
-    background-color: #e7e5e5;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 600px;
     height: 600px; 
     margin-top: 10px;
     margin-bottom: 10px;
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.2s; 
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
     cursor: pointer;
 }
 
 .project-card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px; 
-    background-color: #e7e5e5;
+    padding: 5px;
+    background-color: rgba(187, 185, 185, 0.2); 
 }
+
+#fitbook-logo {
+    height: 100%;
+}
+
 
 .project-info {
     background-color: rgb(226, 218, 218);
