@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Chan Portfolio</title>
     <script type="module" src="js/main.js"></script>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
+
+    <div class="navbar">
+      <a href="index.html">
+        <button class="btn">Home</button>
+      </a>
+      <a
+        href="https://drive.google.com/file/d/12x-6qE0k68RF8YVYluhUwx4o3JgiRFN6/view?usp=sharing"
+        target="_blank"
+      >
+        <button class="btn">Resume</button>
+      </a>
+    </div>
+
+    
     <div class="header-container">
       <div class="contact-info">
         <button class="btn contact-btn">Contact</button>
@@ -28,7 +42,7 @@
         </a>
       </div>
       <div class="toggle-switch">
-        <input type="checkbox" id="theme-toggle"/>
+        <input type="checkbox" id="theme-toggle" />
         <label class="round-button" for="theme-toggle">
           <div></div>
           <div></div>
@@ -37,6 +51,7 @@
         </label>
       </div>
     </div>
+
     <h1 id="my-name">Ethan Chan</h1>
     <div id="about-me">
       Hi! I'm a software developer with a passion for creating clean and elegant
@@ -46,19 +61,18 @@
       by my desire to build products that are not only functional but also
       intuitive and enjoyable for users.
     </div>
-    <div class="navbar">
-      <button class="btn">Home</button>
-      <button class="btn">Resume</button>
-    </div>
+
     <div class="container">
       <div class="project">
-        <div class="project-card">
-          <img
-            id="fitbook-logo"
-            src="media/fitbook-logo.png"
-            alt="Project Image"
-          />
-        </div>
+        <a href="project1.html">
+          <div class="project-card">
+            <img
+              id="fitbook-logo"
+              src="media/fitbook-logo.png"
+              alt="Project Image"
+            />
+          </div>
+        </a>
         <div class="project-info">
           <div class="project-name">FitBook</div>
           <div class="project-description">
@@ -74,7 +88,9 @@
         </div>
         <div class="project-info">
           <div class="project-name">Web Gallery</div>
-          <div class="project-description">Gallery for users to share pictures and comments</div>
+          <div class="project-description">
+            Gallery for users to share pictures and comments.
+          </div>
         </div>
       </div>
 
@@ -102,7 +118,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </body>
 </html>

@@ -1,0 +1,7 @@
+.projects-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+    gap: 50px; 
+    margin: 0;
+}
