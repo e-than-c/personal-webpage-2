@@ -1,0 +1,212 @@
+/* General */
+body {
+    background-color: #1F1F1F;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e7e5e5;
+
+}
+
+/* Header */
+#my-name {
+    color: #4e4d50;
+    font-size: 80px;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+body.dark-mode #my-name {
+    color: #dbd9df;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+    gap: 50px; 
+    margin: 0;
+}
+
+.btn {
+    color: #4e4d50;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 20px; 
+    padding: 10px 20px;
+}
+
+body.dark-mode .btn {
+    color: #dbd9df;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+/* About Me */
+#about-me {
+    color: #4e4d50;
+    font-size: 20px;
+    max-width: 600px; 
+    margin: 20px auto; 
+    line-height: 1.6;
+}
+
+body.dark-mode #about-me {
+    color: #dbd9df; /* Adjust text color for dark mode */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Toggle switch */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-family: "Ubuntu";
+  color: #333333;
+  font-size: 1.5em;
+}
+
+#light-text {
+  color: skyblue;
+  margin: 5px;
+}
+
+#dark-text {
+  color: #161e54;
+  margin: 5px;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 3em;
+  height: 1.5em;
+  background-image: linear-gradient(90deg, #161e54 50%, skyblue 50%);
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+  box-shadow: 0 0 15px 10px hsl(0, 0%, 0%, 0.1) inset;
+  padding: 0;
+  border-radius: 1.25em;
+  display: flex;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.toggle-switch input {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+}
+
+.round-button {
+  position: relative;
+  transform: translateX(-5%);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.button-body {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: radial-gradient(#ffcc33 30%, #fc9601);
+  box-shadow: 0 0 20px #ffcc33;
+}
+
+.round-button div:nth-child(1),
+.round-button div:nth-child(2),
+.round-button div:nth-child(3) {
+  height: 90%;
+  position: absolute;
+  z-index: 1;
+  background-image: radial-gradient(transparent 80%, #fc9601);
+  transform: rotateZ(30deg);
+  transition: 0.4s;
+}
+
+.round-button div:nth-child(2) {
+  transform: rotateZ(60deg);
+}
+
+.round-button div:nth-child(3) {
+  transform: rotateZ(90deg);
+}
+
+.toggle-switch input:checked ~ .round-button {
+  transform: translateX(calc(3em - 98%));
+}
+
+.toggle-switch input:checked ~ .round-button .button-body {
+  background-image: radial-gradient(#f4f4f4, #cacaca);
+  box-shadow: 0 0 20px #f4f4f4;
+}
+
+.toggle-switch input:checked ~ .round-button div:nth-child(1) {
+  height: 5%;
+  aspect-ratio: 1;
+  transform: rotateZ(90deg) translate(0, 0.5em) !important;
+  border-radius: 50%;
+  background-color: #cacaca;
+  transform: rotateZ(180deg);
+}
+
+.toggle-switch input:checked ~ .round-button div:nth-child(2) {
+  height: 10%;
+  aspect-ratio: 1;
+  transform: rotateZ(90deg) translate(-1em, 1em) !important;
+  border-radius: 50%;
+  background-color: #cacaca;
+  transform: rotateZ(180deg);
+}
+
+.toggle-switch input:checked ~ .round-button div:nth-child(3) {
+  height: 15%;
+  aspect-ratio: 1;
+  transform: rotateZ(90deg) translate(0, 1.5em) !important;
+  border-radius: 50%;
+  background-color: #cacaca;
+  transform: rotateZ(180deg);
+}
+
+
+/* For dark mode */ 
+body.dark-mode {
+    background-color: #111111;
+    color: #e7e5e5;
+  }
+
+  body.dark-mode .title {
+    color: #160101; 
+  }

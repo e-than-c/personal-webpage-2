@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 700px)); /* 2 project cards per row */
+    gap: 1em;
+    padding: 2em;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background-color: #e7e5e5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 600px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    background-color: #e7e5e5;
+}
+
+.project-info {
+    background-color: rgb(226, 218, 218);
+    color: white;
+    border-radius: 10px;
+    width: 600px;
+}
+
+body:not(.dark-mode) .project-info {
+    background-color: white;
+    color: #1F1F1F;
+}
+
+.project-name{
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.project-description {
+    font-size: 1.3em; 
+    color: #9591A3;
+    margin: 0.5em 0; 
+}
+
+/* Dark mode  */
+body.dark-mode .project-info {
+    background-color: #111111;
+    color: white;
+}
+
+body.dark-mode .project-description {
+    color: #cfcdd6;
+}
