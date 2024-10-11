@@ -45,17 +45,21 @@ body.dark-mode .project-title p {
 .project-image {
   margin-bottom: 20px;
   flex: 0 0 200px;
+}
+
+#fitbook-authentication-figma {
   text-align: center;
 }
 
 .project-image img {
-  max-width: 100%;
+  max-width: 130%;
   height: auto;
 }
 
 .project-introduction,
 .project-details {
   margin-top: 20px;
+  width: 95%;
 }
 
 .project-introduction h2,
