@@ -1,28 +1,27 @@
 /* General */
 body {
-    background-color: #1F1F1F;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding-top: 0px;
-    color: #e7e5e5;
-
+  background-color: #1f1f1f;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding-top: 0px;
+  color: #e7e5e5;
 }
 
 .linkedin-logo {
-  width: 30px; 
+  width: 30px;
   height: 30px;
 }
 
 body.dark-mode .linkedin-logo {
-  fill: #ffffff; 
+  fill: #ffffff;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 3px; 
-  right: 70px; 
+  top: 23px;
+  right: 70px;
   gap: 15px; /* Space between contact info and toggle switch */
 }
 
@@ -35,34 +34,32 @@ body.dark-mode .linkedin-logo {
 
 /* Header */
 #my-name {
-    color: #4e4d50;
-    font-size: 80px;
-    margin-bottom: 20px; 
-    text-align: center;
-
+  color: #4e4d50;
+  font-size: 80px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 body.dark-mode #my-name {
-    color: #dbd9df;
+  color: #dbd9df;
 }
 
 /* Navigation Bar */
 .navbar {
-    display: flex;
-    padding: 20px; 
-    gap: 50px; 
-    margin: 0;
-    position: relative;
-
+  display: flex;
+  padding: 10px 20px;
+  gap: 50px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .btn {
-    color: #4e4d50;
-    cursor: pointer;
-    border: none;
-    background-color: transparent; 
-    padding: 10px 20px;
-    font-size: 30px;
+  color: #4e4d50;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 30px;
 }
 
 .contact-btn {
@@ -70,33 +67,33 @@ body.dark-mode #my-name {
 }
 
 body.dark-mode .btn {
-    color: #dbd9df;
+  color: #dbd9df;
 }
 
 .btn:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* About Me */
 #about-me {
-    color: #4e4d50;
-    font-size: 20px;
-    max-width: 600px; 
-    margin: 20px auto; 
-    line-height: 1.6;
-    text-align: center;
+  color: #4e4d50;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+  text-align: center;
 }
 
 body.dark-mode #about-me {
-    color: #dbd9df; /* Adjust text color for dark mode */
+  color: #dbd9df; /* Adjust text color for dark mode */
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 
 /* Toggle switch  from https://codepen.io/qub3r-001/details/VwzgMQo */
@@ -231,13 +228,12 @@ body {
   transform: rotateZ(180deg);
 }
 
-
-/* For dark mode */ 
+/* For dark mode */
 body.dark-mode {
-    background-color: #111111;
-    color: #e7e5e5;
-  }
+  background-color: #111111;
+  color: #e7e5e5;
+}
 
-  body.dark-mode .title {
-    color: #160101; 
-  }
+body.dark-mode .title {
+  color: #160101;
+}
