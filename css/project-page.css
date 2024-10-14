@@ -7,7 +7,7 @@
 }
 /* Project Page Specific Styles */
 .project-container {
-  padding: 20px;
+  padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -36,6 +36,8 @@ body.dark-mode .project-header {
 .project-title p {
   font-size: 1.3em;
   color: #4e4d50;
+  margin-top: 20px;
+  max-width: 90%;
 }
 
 body.dark-mode .project-title p {
@@ -45,20 +47,26 @@ body.dark-mode .project-title p {
 .project-image {
   margin-bottom: 20px;
   flex: 0 0 200px;
+  position: relative;
 }
 
+#fitbook-logo {
+  left: -80px;
+  top: 90px;
+}
 #fitbook-authentication-figma {
   text-align: center;
 }
 
 .project-image img {
-  max-width: 130%;
+  max-width: 300px;
   height: auto;
+
 }
 
 .project-introduction,
 .project-details {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 95%;
 }
 
@@ -74,10 +82,11 @@ body.dark-mode .project-details h2 {
   color: #dbd9df;
 }
 
-.project-introduction p,
-.project-details p {
+
+.project-introduction p, .project-details p {
   font-size: 1.3em;
   color: #333;
+  margin-top: 20px;
 }
 
 body.dark-mode .project-introduction p,
@@ -110,7 +119,7 @@ body.dark-mode .project-details ul li {
 .upper-details {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #project1-features,
@@ -120,4 +129,13 @@ body.dark-mode .project-details ul li {
 
 #project1-technologies-used {
   margin-right: 0;
+}
+
+.role-description {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.reflection {
+  margin-bottom: 40px;
 }
