@@ -1,8 +1,9 @@
-/* Toggle switch */
+
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM loaded");
 
+  /* Toggle Switch */
   const themeToggle = document.querySelector("input");
   const body = document.body;
 
@@ -33,5 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".toggle-switch").style.boxShadow = "0 0 15px 10px hsl(0, 0%, 0%, 0.1) inset";
       localStorage.setItem("theme", "light");
     }
+  });
+
+  /* Contact button */
+  const contactButton = document.getElementById("contact-button");
+  contactButton.addEventListener("click", function () {
+    console.log("contact button clicked");
+    window.location.href = "mailto:enchan101@gmail.com";
   });
 });
