@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Chan Portfolio</title>
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/project2.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/project-page.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">
+        <button class="btn">Home</button>
+      </a>
+      <a
+        href="https://drive.google.com/file/d/12x-6qE0k68RF8YVYluhUwx4o3JgiRFN6/view?usp=sharing"
+        target="_blank"
+      >
+        <button class="btn">Resume</button>
+      </a>
+    </div>
+
+    <div class="header-container">
+      <div class="contact-info">
+        <button class="btn contact-btn" id="contact-button">Contact</button>
+        <a
+          href="https://www.linkedin.com/in/ethan-chan-02b690203/"
+          target="_blank"
+        >
+          <svg
+            class="linkedin-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06 2.06.92 2.06 2.06-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3.56V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label class="round-button" for="theme-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="button-body"></div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="project-container">
+      <div class="project-header">
+        <div class="project-title">
+          <h1>Basic Web Gallery</h1>
+          <p>
+            A single-page web application where users can share pictures and
+            comments with enhanced authentication and personalized galleries.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-introduction">
+        <h2>About</h2>
+        <p>
+          The Basic Web Gallery is my very first web application project. It
+          allows users to create and manage personal galleries with features
+          such as authentication, image uploads, and a comment system. Users can
+          upload images to their own galleries, explore galleries created by
+          others, and leave comments on images. The application is designed to
+          be user-friendly and straightforward.
+        </p>
+      </div>
+
+      <div class="project-details">
+        <div class="upper-details">
+          <div id="project1-features">
+            <h2>Features</h2>
+            <ul>
+              <li>Authenticated user sessions with secure login/logout</li>
+              <li>Personalized galleries for each user</li>
+              <li>Image upload, navigation, and deletion functionality</li>
+              <li>Commenting system</li>
+            </ul>
+          </div>
+
+          <div id="project1-technologies-used">
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>Frontend: HTML, CSS, JavaScript</li>
+              <li>Backend: Node.js, Express.js</li>
+              <li>Database: NeDB (NoSQL)</li>
+              <li>Deployment: GitHub Pages</li>
+              <li>Testing: Mocha and Chai</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <button class="btn carousel-btn" id="prev-btn">&lt;</button>
+          <div class="carousel-images">
+            <img
+              src="media/web-gallery5.png"
+              alt="Web Gallery Image 1"
+              class="carousel-image active"
+            />
+            <img
+              src="media/web-gallery4.png"
+              alt="Web Gallery Image 2"
+              class="carousel-image"
+            />
+            <img
+              src="media/web-gallery2.png"
+              alt="Web Gallery Image 3"
+              class="carousel-image"
+            />
+            <img
+            src="media/web-gallery3.png"
+            alt="Web Gallery Image 4"
+            class="carousel-image"
+          />
+          </div>
+          <button class="btn carousel-btn" id="next-btn">&gt;</button>
+        </div>
+
+        <div class="reflection">
+          <h2>Reflection</h2>
+          <p>
+            This Web Gallery was my introduction to understanding user
+            authentication, REST APIs, and frontend integration. The
+            challenges of implementing secure user sessions and handling
+            large-scale image data improved my debugging and problem-solving
+            skills. This project also introduced me to the importance of testing
+            user endpoints, which I implemented with Mocha and Chai.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
