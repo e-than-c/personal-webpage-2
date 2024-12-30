@@ -1,0 +1,36 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .carousel-images {
+    display: flex;
+    overflow: hidden;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .carousel-image {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-image.active {
+    display: block;
+  }
+  
+  .carousel-btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .carousel-btn:disabled {
+    cursor: not-allowed;
+  }
+  

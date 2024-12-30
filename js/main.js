@@ -36,10 +36,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  /* Contact button */
-  const contactButton = document.getElementById("contact-button");
-  contactButton.addEventListener("click", function () {
-    console.log("contact button clicked");
-    window.location.href = "mailto:enchan101@gmail.com";
-  });
+  /* Image carousel */
+
+  const images = document.querySelectorAll(".carousel-image");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    let currentIndex = 0;
+  
+    const updateCarousel = () => {
+      images.forEach((img, index) => {
+        img.classList.toggle("active", index === currentIndex);
+      });
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === images.length - 1;
+    };
+  
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+  
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+  
+    updateCarousel();
 });
