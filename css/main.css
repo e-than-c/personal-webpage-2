@@ -8,8 +8,8 @@ body {
 }
 
 .linkedin-logo {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
 }
 
 body.dark-mode .linkedin-logo {
