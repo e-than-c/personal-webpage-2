@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/project-page.css" />
   </head>
   <body>
-    <div class="navbar">
+    <div class="header-container">
+      <div class="navbar">
         <a href="index.html">
           <button class="btn">Projects</button>
         </a>
-        <a href="index.html">
+        <a href="aboutme.html">
           <button class="btn">About Me</button>
         </a>
         <a
@@ -23,34 +24,34 @@
         >
           <button class="btn">Resume</button>
         </a>
-      </div>
-
-    <div class="header-container">
-      <div class="contact-info">
-        <button class="btn contact-btn" id="contact-button">Contact</button>
-        <a
-          href="https://www.linkedin.com/in/ethan-chan-02b690203/"
-          target="_blank"
-        >
-          <svg
-            class="linkedin-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
+        <div class="contact-info">
+          <button class="btn contact-btn" id="contact-button">Contact</button>
+          <a
+            href="https://www.linkedin.com/in/ethan-chan-02b690203/"
+            target="_blank"
           >
-            <path
-              d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06 2.06.92 2.06 2.06-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3.56V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24z"
-            />
-          </svg>
-        </a>
+            <svg
+              class="linkedin-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06 2.06.92 2.06 2.06-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3.56V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="toggle-switch">
-        <input type="checkbox" id="theme-toggle" />
-        <label class="round-button" for="theme-toggle">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div class="button-body"></div>
-        </label>
+      <div class="toggle-switch-container">
+        <div class="toggle-switch">
+          <input type="checkbox" id="theme-toggle" />
+          <label class="round-button" for="theme-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="button-body"></div>
+          </label>
+        </div>
       </div>
     </div>
 
@@ -58,61 +59,30 @@
     <div class="project-container">
       <div class="project-header">
         <div class="project-title">
-          <h1>FitBook</h1>
-          <p>
-            A social media app that combines fitness with social connectivity.
-          </p>
+          <h1>Ethan Chan</h1>
         </div>
-        <div id="fitbook-logo" class="project-image">
-          <img src="media/fitbook-logo.png" alt="FitBook Logo" />
+        <div id="profile-photo" class="project-image">
+          <img src="media/ethan2.png" alt="Profile Photo" />
         </div>
       </div>
 
       <div class="project-introduction">
-        <h2>About</h2>
+        <h2>About Me</h2>
         <p>
-          FitBook is a unique social media platform designed to motivate users
-          through community engagement and healthy competition. By integrating
-          fitness tracking with social connectivity, FitBook allows users to
-          share their workouts, track progress, and repost fitness content,
-          promoting consistent physical activity. Users can connect with friends
-          and like-minded individuals to share their fitness journeys, join
-          challenges, and inspire one another.
+          I’m a fourth-year Computer Science student at the University of
+          Toronto, passionate about programming and solving real-world problems
+          with technology. My academic journey has deepened my skills in
+          software development, data structures, and UI/UX design, while also fueling
+          my curiosity for innovation in the tech world. Outside of coding, I’m
+          an avid sports enthusiast. You’ll often find me on the ice (or floor!) playing
+          hockey, hitting the shuttlecock in badminton, or exploring my need for
+          speed with go-karting. I’m also a dedicated F1 fan, Maple Leafs and
+          Oilers supporter, and a regular at the gym. When I’m not active, I
+          enjoy diving into a good book to unwind.
         </p>
       </div>
 
       <div class="project-details">
-        <div class="upper-details">
-          <div id="project1-features">
-            <h2>Features</h2>
-            <ul>
-              <li>Track workouts and fitness progress</li>
-              <li>Share updates and achievements with friends</li>
-              <li>Join fitness challenges and groups</li>
-              <li>Connect with fitness enthusiasts</li>
-            </ul>
-          </div>
-
-          <div id="project1-technologies-used">
-            <h2>Technologies Used</h2>
-            <ul>
-              <li>Design: Figma</li>
-              <li>Frontend: React Native</li>
-              <li>Backend: Node.js, Express.js</li>
-              <li>Database: MongoDB</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project-image" id="fitbook-authentication-figma">
-          <iframe
-            style="border: 1px solid rgba(0, 0, 0, 0.1)"
-            width="800"
-            height="450"
-            src="https://embed.figma.com/design/aRr6O5C4tv3k06P0o8Ga93/FitBook?node-id=17-2&embed-host=share"
-            allowfullscreen
-          ></iframe>
-        </div>
 
         <div class="role-description">
           <h2>Role</h2>

@@ -48,6 +48,7 @@ body.dark-mode .project-title p {
   margin-bottom: 20px;
   flex: 0 0 200px;
   position: relative;
+  border-radius: 50%;
 }
 
 #fitbook-logo {

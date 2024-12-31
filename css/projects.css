@@ -41,7 +41,6 @@
     height: 100%;
 }
 
-
 .project-info {
     background-color: rgb(226, 218, 218);
     color: white;
@@ -73,4 +72,9 @@ body.dark-mode .project-info {
 
 body.dark-mode .project-description {
     color: #cfcdd6;
+}
+
+#profile-photo img {
+    border-radius: 50%; 
+    margin-right: 50px;
 }
