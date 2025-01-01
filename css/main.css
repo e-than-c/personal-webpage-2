@@ -238,7 +238,7 @@ body.dark-mode .title {
 
 /* Footer CSS */
 .footer {
-  background-color: #222;
+  background-color: #353333;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -278,8 +278,8 @@ body.dark-mode .title {
 }
 
 .footer-socials img {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
 }
 
 .linkedin-logo2  {
