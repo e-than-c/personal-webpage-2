@@ -286,3 +286,8 @@ body.dark-mode .title {
   width: 24px;
   height: 24px;
 }
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 12px;
+}
