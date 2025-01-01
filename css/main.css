@@ -234,3 +234,55 @@ body.dark-mode .title {
   width: 90px;
   cursor: pointer;
 }
+
+
+/* Footer CSS */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin-logo2  {
+  width: 24px;
+  height: 24px;
+}
