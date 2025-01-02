@@ -1,0 +1,12 @@
+
+#credits-title {
+    margin-top: 0px;
+    color: #4e4d50;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  body.dark-mode #credits-title {
+    color: #dbd9df;
+  }

@@ -25,24 +25,24 @@
         >
           <button class="btn">Resume</button>
         </a>
-      <div class="contact-info">
-        <button class="btn contact-btn" id="contact-button">Contact</button>
-        <a
-          href="https://www.linkedin.com/in/ethan-chan-02b690203/"
-          target="_blank"
-        >
-          <svg
-            class="linkedin-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 23"
+        <div class="contact-info">
+          <button class="btn contact-btn" id="contact-button">Contact</button>
+          <a
+            href="https://www.linkedin.com/in/ethan-chan-02b690203/"
+            target="_blank"
           >
-            <path
-              d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06 2.06.92 2.06 2.06-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3.56V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24z"
-            />
-          </svg>
-        </a>
+            <svg
+              class="linkedin-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 23"
+            >
+              <path
+                d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06 2.06.92 2.06 2.06-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3.56V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
       <div class="toggle-switch-container">
         <div class="toggle-switch">
           <input type="checkbox" id="theme-toggle" />
@@ -123,10 +123,10 @@
               class="carousel-image"
             />
             <img
-            src="media/web-gallery3.png"
-            alt="Web Gallery Image 4"
-            class="carousel-image"
-          />
+              src="media/web-gallery3.png"
+              alt="Web Gallery Image 4"
+              class="carousel-image"
+            />
           </div>
           <button class="btn carousel-btn" id="next-btn">&gt;</button>
         </div>
@@ -135,11 +135,11 @@
           <h2>Reflection</h2>
           <p>
             This Web Gallery was my introduction to understanding user
-            authentication, REST APIs, and frontend integration. The
-            challenges of implementing secure user sessions and handling
-            large-scale image data improved my debugging and problem-solving
-            skills. This project also introduced me to the importance of testing
-            user endpoints, which I implemented with Mocha and Chai.
+            authentication, REST APIs, and frontend integration. The challenges
+            of implementing secure user sessions and handling large-scale image
+            data improved my debugging and problem-solving skills. This project
+            also introduced me to the importance of testing user endpoints,
+            which I implemented with Mocha and Chai.
           </p>
         </div>
       </div>
@@ -148,7 +148,16 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
-        <p>&copy; 2025 Ethan Chan. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Projects</a>
+          <a href="aboutme.html">About Me</a>
+          <a
+            href="https://drive.google.com/file/d/1lsb2FKwEpIjFSCyp50rNYgqave3Z70_5/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+          <a href="credits.html">Credits</a>
+        </div>
         <div class="footer-socials">
           <a
             href="https://www.linkedin.com/in/ethan-chan-02b690203/"
@@ -166,13 +175,8 @@
               />
             </svg>
           </a>
-          <a
-            href="https://github.com/e-than-c"
-            target="_blank"
-            title="GitHub"
-          >
+          <a href="https://github.com/e-than-c" target="_blank" title="GitHub">
             <img
-            id="github-icon"
               src="media/github-logo.png"
               alt="GitHub Icon"
               class="github-icon"
@@ -186,6 +190,9 @@
               class="email-icon"
             />
           </a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2025 Ethan Chan. All rights reserved.</p>
         </div>
       </div>
     </footer>

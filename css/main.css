@@ -27,7 +27,7 @@ body.dark-mode .linkedin-logo {
 
 /* Header */
 #my-name {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #4e4d50;
   font-size: 80px;
   margin-bottom: 20px;
@@ -243,6 +243,7 @@ body.dark-mode .title {
   padding: 20px;
   text-align: center;
   width: 100%;
+  margin-top: auto;
 }
 
 .footer-container {
