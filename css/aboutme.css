@@ -1,24 +1,36 @@
-.job {
-    margin: 5px;
-}
-
-.job p {
-    margin: 5px;
-}
-
-section {
-    margin: 5px;
-}
-#extracurriculars {
-    margin: 5px;
-}
-
-h3 {
-    font-size: 30px;
+.job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 100px; 
+    height: 100px;
+    margin-right: 2%; 
+    border-radius: 10%;
+  }
+  
+  .job-details h3 {
+    font-size: 2rem;
     font-weight: bold;
+    margin: 0;
     color: #4e4d50;
+  }
+
+  body.dark-mode .job-details h3 {
+    color: #dbd9df;
+  }
+  
+  .job-details p {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+  }
+  
+.job {
+    margin: 2%;
 }
 
-body.dark-mode h3 {
-    color: #dbd9df;
-}
+  
+  
