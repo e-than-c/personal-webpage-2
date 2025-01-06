@@ -140,3 +140,16 @@ body.dark-mode .project-details ul li {
 .reflection {
   margin-bottom: 40px;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
