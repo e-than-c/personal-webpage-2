@@ -1,9 +1,10 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 700px)); /* 2 project cards per row */
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* project cards per row */
     gap: 1em;
-    padding: 2em;
-    justify-content: center;
+    padding: 1em;
+    width: 80%;
+
 }
 
 .project {
@@ -11,18 +12,18 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .project-card {
-    border-radius: 10px;
-    padding: 10px;
-    width: 600px;
-    height: 600px; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    transition: transform 0.2s; 
+    border-radius: 0.625rem; 
+    padding: 0.625rem; 
+    width: 23rem; 
+    height: 23rem; 
+    margin: 0 auto;
+    transition: transform 0.2s;
 }
+
 
 .project-card:hover {
     transform: scale(1.05); 
@@ -32,8 +33,8 @@
 .project-card img {
     width: 100%;
     height: 100%;
-    border-radius: 10px; 
-    padding: 5px;
+    border-radius: 0.625rem;
+    padding: 0.3125rem;
     background-color: rgba(187, 185, 185, 0.2); 
 }
 
@@ -44,8 +45,8 @@
 .project-info {
     background-color: rgb(226, 218, 218);
     color: white;
-    border-radius: 10px;
-    width: 600px;
+    border-radius: 0.625rem;
+    width: 23rem;
 }
 
 body:not(.dark-mode) .project-info {
@@ -55,13 +56,13 @@ body:not(.dark-mode) .project-info {
 
 .project-name{
     font-size: 2em;
-    margin: 0.5em 0;
+    margin: 0.2em 0;
 }
 
 .project-description {
     font-size: 1.3em; 
     color: #9591A3;
-    margin: 0.5em 0; 
+    margin: 0.2em 0; 
 }
 
 /* Dark mode  */
@@ -77,4 +78,40 @@ body.dark-mode .project-description {
 #profile-photo img {
     border-radius: 50%; 
     margin-right: 50px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-name {
+        font-size: 1.5rem; 
+    }
+
+    .project-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-name {
+        font-size: 1.25rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
 }

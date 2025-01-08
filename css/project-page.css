@@ -1,23 +1,26 @@
 .projects-navigation {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  gap: 50px;
+  padding: 1.25rem;
+  gap: 3.125rem;
   margin: 0;
 }
 /* Project Page Specific Styles */
 .project-container {
-  padding: 10px;
-  max-width: 1200px;
+  padding: 0.625rem;
+  width: 100%;
+  max-width: 75rem; 
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #4e4d50;
+  flex-wrap: wrap;
 }
 
 body.dark-mode .project-header {
@@ -26,15 +29,17 @@ body.dark-mode .project-header {
 
 .project-title {
   flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project-title h1 {
-  font-size: 5em;
+  font-size: 3.3em;
   margin: 0;
 }
 
 .project-title p {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   color: #4e4d50;
   margin-top: 20px;
   max-width: 90%;
@@ -45,35 +50,47 @@ body.dark-mode .project-title p {
 }
 
 .project-image {
-  margin-bottom: 20px;
-  flex: 0 0 200px;
+  margin-bottom: 1.25rem;
+  flex: 0 0 250px;
   position: relative;
   border-radius: 50%;
+  max-width: 100%;
 }
 
-#fitbook-logo {
-  left: -80px;
-  top: 90px;
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
+
+
 #fitbook-authentication-figma {
   text-align: center;
 }
 
 .project-image img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 
 }
 
 .project-introduction,
 .project-details {
-  margin-top: 40px;
-  width: 95%;
+  margin-top: 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project-introduction h2,
 .project-details h2 {
-  font-size: 2em;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   color: #4e4d50;
 }
@@ -85,7 +102,7 @@ body.dark-mode .project-details h2 {
 
 
 .project-introduction p, .project-details p {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   color: #333;
   margin-top: 20px;
 }
@@ -101,7 +118,7 @@ body.dark-mode .project-details p {
 }
 
 .project-details ul li {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 5px;
 }
@@ -152,4 +169,53 @@ body.dark-mode .project-details ul li {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .project-title h1 {
+    font-size: 3.125rem; 
+  }
+
+  .project-title p {
+    font-size: 1.125rem; 
+  }
+
+  .project-introduction h2,
+  .project-details h2 {
+    font-size: 1.5rem; 
+  }
+
+  .project-introduction p,
+  .project-details p {
+    font-size: 1.125rem; 
+  }
+
+  .project-details ul li {
+    font-size: 1.125rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title h1 {
+    font-size: 2.5rem; 
+  }
+
+  .project-title p {
+    font-size: 1rem;
+  }
+
+  .project-introduction h2,
+  .project-details h2 {
+    font-size: 1.25rem; 
+  }
+
+  .project-introduction p,
+  .project-details p {
+    font-size: 1rem; 
+  }
+
+  .project-details ul li {
+    font-size: 1rem; 
+  }
 }

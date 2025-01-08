@@ -1,10 +1,17 @@
 /* General */
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   background-color: #1f1f1f;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding-top: 0px;
   color: #e7e5e5;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .linkedin-logo {
@@ -21,16 +28,16 @@ body.dark-mode .linkedin-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px; /* Space between contact info and toggle switch */
-  margin-bottom: 5px
+  gap: 1rem; /* Space between contact info and toggle switch */
+  margin-bottom: 0.3125rem;
 }
 
 /* Header */
 #my-name {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   color: #4e4d50;
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 5rem;
+  margin-bottom: 1.25rem;
   text-align: center;
 }
 
@@ -68,9 +75,9 @@ body.dark-mode .btn {
 /* About Me */
 #about-me {
   color: #4e4d50;
-  font-size: 20px;
-  max-width: 600px;
-  margin: 20px auto;
+  font-size: 1.25rem;
+  max-width: 37.5rem;
+  margin: 1.25rem auto;
   line-height: 1.6;
   text-align: center;
 }
@@ -79,13 +86,6 @@ body.dark-mode #about-me {
   color: #dbd9df; /* Adjust text color for dark mode */
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
 
 /* Toggle switch  from https://codepen.io/qub3r-001/details/VwzgMQo */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
@@ -291,4 +291,40 @@ body.dark-mode .title {
 .footer-copy {
   margin-top: 10px;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  #my-name {
+    font-size: 3.125rem;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.3125rem 0.625rem;
+  }
+
+  #about-me {
+    font-size: 1.125rem;
+    padding: 0.625rem; 
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #my-name {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.125rem;
+    padding: 0.3125rem 0.5rem;
+  }
+
+  #about-me {
+    font-size: 1rem;
+    padding: 0.3125rem;
+  }
 }
