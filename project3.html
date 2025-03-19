@@ -90,26 +90,50 @@
         <div class="carousel-container">
           <button class="btn carousel-btn" id="prev-btn">&lt;</button>
           <div class="carousel-images-web-gallery">
-            <img
-              src="media/web-gallery5.png"
-              alt="Web Gallery Image 1"
-              class="carousel-image active"
-            />
-            <img
-              src="media/web-gallery4.png"
-              alt="Web Gallery Image 2"
-              class="carousel-image"
-            />
-            <img
-              src="media/web-gallery2.png"
-              alt="Web Gallery Image 3"
-              class="carousel-image"
-            />
-            <img
-              src="media/web-gallery3.png"
-              alt="Web Gallery Image 4"
-              class="carousel-image"
-            />
+            <div class="carousel-item active">
+              <img
+                src="media/web-gallery5.png"
+                alt="Web Gallery Image 1"
+                class="carousel-image"
+              />
+              <p class="carousel-description">
+                Users can create an account to get started or log in with their
+                email to access their personalized gallery.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="media/web-gallery4.png"
+                alt="Web Gallery Image 2"
+                class="carousel-image"
+              />
+              <p class="carousel-description">
+                Users can upload and organize images in their personalized
+                galleries, making it easy to manage and showcase their content.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="media/web-gallery2.png"
+                alt="Web Gallery Image 3"
+                class="carousel-image"
+              />
+              <p class="carousel-description">
+                Users can browse through their own galleries, or discover and
+                browse through other users' galleries.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="media/web-gallery3.png"
+                alt="Web Gallery Image 4"
+                class="carousel-image"
+              />
+              <p class="carousel-description">
+                Only registered users who are signed in can engage with
+                galleries, by leaving comments on images shared by others.
+              </p>
+            </div>
           </div>
           <button class="btn carousel-btn" id="next-btn">&gt;</button>
         </div>
@@ -117,12 +141,28 @@
         <div class="reflection">
           <h2>Reflection</h2>
           <p>
-            This Web Gallery was my introduction to understanding user
-            authentication, REST APIs, and frontend integration. The challenges
-            of implementing secure user sessions and handling large-scale image
-            data improved my debugging and problem-solving skills. This project
-            also introduced me to the importance of testing user endpoints,
-            which I implemented with Mocha and Chai.
+            Developing the Web Gallery was my first experience implementing user
+            authentication and access control. I designed a secure login system
+            where only authenticated users could access galleries, ensuring data
+            privacy. Additionally, I implemented role-based permissions,
+            allowing users to manage their own content, by restricting comment
+            deletion to either the gallery owner or the comment author. This
+            deepened my understanding of secure session management, password
+            encryption, and user authentication best practices.
+          </p>
+          <p>
+            Beyond authentication, this project introduced me to RESTful API
+            design and frontend-backend integration. I built some basic API
+            endpoints to handle image uploads, user sessions, and gallery
+            navigation, enabling communication between the Node.js backend and
+            JavaScript frontend.
+          </p>
+          <p>
+            I also learned the importance of testing API endpoints to prevent
+            security vulnerabilities and ensure reliability. I wrote and
+            executed unit tests using Mocha and Chai, strengthening the
+            application’s robustness and reinforcing my ability to debug complex
+            web interactions efficiently.
           </p>
         </div>
       </div>

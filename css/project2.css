@@ -15,11 +15,26 @@
 
   .carousel-images-web-gallery {
     display: flex;
-    overflow: hidden;
-    width: 35rem;
-    height: 28rem;
+    width: 28rem;
+    height: 30rem;
+    object-fit: cover;
   }
   
+  .carousel-item {
+    display: none;
+    text-align: center;
+  }
+
+  .carousel-item.active {
+    display:block
+  }
+
+  .carousel-description {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #555;
+  }
+
   .carousel-image {
     display: none;
     width: 100%;

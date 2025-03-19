@@ -41,14 +41,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".carousel-image");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
+    const carouselItems = document.querySelectorAll(".carousel-item");
+
     let currentIndex = 0;
   
     const updateCarousel = () => {
-      images.forEach((img, index) => {
-        img.classList.toggle("active", index === currentIndex);
+      carouselItems.forEach((item, index) => {
+        item.classList.toggle("active", index === currentIndex);
+      });
+      images.forEach((image, index) => {
+        image.classList.toggle("active", index === currentIndex);
       });
       prevBtn.disabled = currentIndex === 0;
-      nextBtn.disabled = currentIndex === images.length - 1;
+      nextBtn.disabled = currentIndex === carouselItems.length - 1;
     };
   
     prevBtn.addEventListener("click", () => {
@@ -59,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     nextBtn.addEventListener("click", () => {
-      if (currentIndex < images.length - 1) {
+      if (currentIndex < carouselItems.length - 1) {
         currentIndex++;
         updateCarousel();
       }
