@@ -33,6 +33,15 @@ body.dark-mode .linkedin-logo {
   margin-bottom: 0.3125rem;
 }
 
+/* Links */
+a {
+  color: #ff5733;
+}
+
+a:visited {
+  color: #b34700;
+}
+
 /* Header */
 #my-name {
   margin-top: 0.3125rem;
