@@ -1,0 +1,14 @@
+
+
+.dashboard-item {
+    display: block;
+}
+
+.invis {
+    visibility: hidden;
+    cursor: default;
+}
+
+.dashboard-features {
+    color: inherit;
+}

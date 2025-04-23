@@ -59,4 +59,18 @@
   .carousel-btn:disabled {
     cursor: not-allowed;
   }
+
+
+
+  .dashboard-item{
+    display:block;
+  }
   
+  .dashboard-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 34.375rem;
+    border: #555 2px solid;
+  }
